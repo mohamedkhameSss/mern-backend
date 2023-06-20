@@ -19,7 +19,11 @@ mongoose
   });
 
 const app = express();
-app.use(cors({origin:["http://localhost:3000","http://mern-ecommerce.onrender.com"]}));
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "http://mern-ecommerce.onrender.com"],
+  })
+);
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
