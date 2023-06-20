@@ -32,6 +32,9 @@ app.use("/api/orders", orderRoute);
 app.use("/api/cards", cardRoute);
 app.use("/api/checkout", stripeRoute);
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log("doo");
-});
+app.listen(
+  process.env.PORT || 5000 || "https://mern-ecommerce-api-bpq3.onrender.com/",
+  () => {
+    console.log("doo");
+  }
+);
