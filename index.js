@@ -33,7 +33,7 @@ app.use("/api/cards", cardRoute);
 app.use("/api/checkout", stripeRoute);
 
 app.listen(
-  process.env.PORT || 5000 || "mern-back-app-mesox.onrender.com" ,
+  process.env.PORT || 5000 || "mern-back-app-mesox.onrender.com",
   () => {
     console.log("doo");
   }
